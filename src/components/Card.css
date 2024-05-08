@@ -1,0 +1,86 @@
+.card {
+    width: 180px;
+
+}
+
+.card .card-image {
+    width: 100%;
+    height: 235px;
+    background-image: url("../assets/katie-zaferes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 9px;
+    padding: .5rem;
+}
+
+.card .card-tag {
+    background-color: #fff;
+    display: inline;
+    padding: .3rem .4rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.card .card-details {
+    padding: .2rem;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.card-details .rowOne {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.card-details .rowOne img {
+    width: 14px;
+    height: auto;
+}
+
+.card-details .rowOne ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.card-details .rowOne ul li {
+    margin-right: 4px;
+}
+
+.card-details .rowOne ul li:nth-child(3) {
+    list-style: inside;
+}
+
+.card-details ul li span {
+    position: relative;
+    left: -8px;
+}
+
+.card-details .rowTwo {}
+
+/* .rowOne p {
+    display: inherit;
+    gap: .25rem;
+    font-size: 12px;
+    position: relative;
+}
+
+.rowOne .location {
+    margin-left: 8px;
+}
+
+.rowOne .location::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #918E9B;
+    position: absolute;
+    left: 58%;
+    top: 30%;
+} */
