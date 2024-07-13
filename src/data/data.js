@@ -102,5 +102,44 @@ export default [
         },
         location: "Colorado",
         openSpots: 2,
+    },
+    {
+        id: 9,
+        title: "Spanish Language Immersion",
+        description: "Immerse yourself in the Spanish language and culture with this intensive course designed for all levels.",
+        price: 300,
+        coverImg: "spanish-immersion.webp",
+        stats: {
+            rating: 4.6,
+            reviewCount: 10
+        },
+        location: "Spain",
+        openSpots: 12,
+    },
+    {
+        id: 10,
+        title: "Scuba Diving Certification",
+        description: "Get certified as a scuba diver with this comprehensive course that covers all the essentials. Dive into a new world!",
+        price: 500,
+        coverImg: "scuba-diving.webp",
+        stats: {
+            rating: 5.0,
+            reviewCount: 22
+        },
+        location: "Australia",
+        openSpots: 6,
+    },
+    {
+        id: 11,
+        title: "Painting with a Twist",
+        description: "Enjoy a fun and creative evening painting with friends. No experience necessary, just bring your creativity!",
+        price: 40,
+        coverImg: "painting-twist.webp",
+        stats: {
+            rating: 4.7,
+            reviewCount: 15
+        },
+        location: "New York",
+        openSpots: 20,
     }
 ]
