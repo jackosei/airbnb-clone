@@ -1,32 +1,37 @@
-import starIcon from "../assets/star.png"
+import starIcon from "../../assets/star.png"
 import "./Card.css"
 
-export default function Card() {
+export default function Card({img, rating, reviewCount, location, title, price, openSpots}) {
+	let tagText
+	let isOnline = location === "Online"
+	
+	// Method 1
+	tagText = isOnline ? "online" : 
+		(openSpots === 0 ? tagText = "sold out" : null)
+
+	//Method 2
+	// isOnline ? tagText = "online" :
+	// openSpots === 0 ? tagText = "sold out" : null
+
 	return (
 		<section className="card">
-			<div className="card-image">
-				<p className="card-tag">sold out</p>
+			<div className="card-image" style={{backgroundImage: `url(../../assets/${img})`}}>
+			{tagText && <p className="card-tag">{tagText}</p>}
 			</div>
 			<div className="card-details">
 				<div className="rowOne">
 					<img src={starIcon} alt="star icon" className="star-icon" />
-					{/* <p>
-					<span className="rating">5.0</span>
-					<span className="reviews">(6)</span>
-					<span className="location">USA</span>
-				</p> */}
-					<ul>
-						<li>5.0</li>
-						<li>(6)</li>
-						<li>
-							<span>USA</span>
-						</li>
-					</ul>
+					<div className="stats">
+						<span className="rating">{rating} </span>
+						<span className="reviews">({reviewCount}) </span>
+						<span className="separator">•</span>
+						<span className="location">{location} </span>
+					</div>
 				</div>
 				<div className="rowTwo">
-					<p>Life lessons with Katie Zaferes</p>
-					<p>
-						<strong>From $136</strong> / person
+					<h2 className="title">{title}</h2>
+					<p className="price">
+						<span>From ${price}</span> / person
 					</p>
 				</div>
 			</div>
