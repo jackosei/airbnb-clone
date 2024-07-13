@@ -6,8 +6,8 @@ export default function Card({img, rating, reviewCount, location, title, price, 
 	let isOnline = location === "Online"
 	
 	// Method 1
-	tagText = isOnline ? "online" : 
-		(openSpots === 0 ? tagText = "sold out" : null)
+	tagText = openSpots === 0 ? tagText = "sold out": 
+		(isOnline ? "online" : null)
 
 	//Method 2
 	// isOnline ? tagText = "online" :
